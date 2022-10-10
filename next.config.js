@@ -1,5 +1,5 @@
-const withSvgr = require('next-plugin-svgr');
 const { withPlugins } = require('next-composed-plugins');
+const { i18n } = require('./next-i18next.config');
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -11,6 +11,7 @@ module.exports = withPlugins(
     compiler: {
       styledComponents: true,
     },
+    i18n,
   },
-  [withSvgr, withBundleAnalyzer],
+  [withBundleAnalyzer],
 );

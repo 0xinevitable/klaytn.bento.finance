@@ -1,9 +1,10 @@
+import { appWithTranslation } from 'next-i18next';
 import { AppProps } from 'next/app';
 import React from 'react';
 
 import { GlobalStyle } from '@/components/GlobalStyle';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <React.Fragment>
       {/* @ts-ignore // Type mismatch after upgrading to React 18 */}
@@ -13,6 +14,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div id="portal" />
     </React.Fragment>
   );
-}
+};
 
-export default MyApp;
+export default appWithTranslation(App);
