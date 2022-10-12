@@ -29,6 +29,10 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
+  img {
+    user-select: none;
+  }
+
   input, button {
     outline: 0;
     background-color: transparent;

@@ -3,6 +3,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import backgroundImage from '@/assets/background.png';
+import bitcoinIllust from '@/assets/bitcoin.png';
+import limeIllust from '@/assets/lime.png';
+import walletIllust from '@/assets/wallet.png';
 import { Colors } from '@/styles/colors';
 
 const LandingPage = () => {
@@ -19,6 +22,19 @@ const LandingPage = () => {
             하나씩 계속 <br />
             왔다갔다 해야 하고
           </CardText>
+          <Image
+            alt="Wallet"
+            src={walletIllust}
+            width={314.54}
+            height={287.74}
+            style={{
+              position: 'absolute',
+              zIndex: 5,
+              filter: 'saturate(120%)',
+              bottom: -114.74,
+              left: 4,
+            }}
+          />
         </Card>
         <Card>
           <CardText className="red">
@@ -29,6 +45,19 @@ const LandingPage = () => {
             NFT 가격도 <br />
             실시간으로 보고 싶고 <br />
           </CardText>
+          <Image
+            alt="Bitcoin"
+            src={bitcoinIllust}
+            width={255}
+            height={232}
+            style={{
+              position: 'absolute',
+              zIndex: 5,
+              filter: 'saturate(120%)',
+              bottom: -76,
+              left: 40,
+            }}
+          />
         </Card>
         <StatusQuoCard>
           <span className="subtitle">클레이튼 위에 있는</span>
@@ -36,6 +65,19 @@ const LandingPage = () => {
             내 자산, 매일매일 <br />
             한꺼번에 살펴보고 싶은데.
           </span>
+
+          <Image
+            alt="Lime"
+            src={limeIllust}
+            width={341}
+            height={289}
+            style={{
+              position: 'absolute',
+              zIndex: 5,
+              top: -35,
+              right: 0,
+            }}
+          />
         </StatusQuoCard>
       </Header>
       <Banner>
@@ -92,6 +134,7 @@ const Header = styled.div`
   gap: 22px;
 `;
 const Card = styled.div`
+  position: relative;
   width: 320px;
   height: 100%;
   background: ${Colors.gray800};
@@ -114,6 +157,7 @@ const CardText = styled.span`
 `;
 
 const StatusQuoCard = styled.div`
+  position: relative;
   width: 656px;
   height: 100%;
   flex: 1;
@@ -125,6 +169,7 @@ const StatusQuoCard = styled.div`
   align-items: flex-start;
   justify-content: flex-end;
   padding: 40px 38px;
+  filter: saturate(120%);
 
   .subtitle {
     font-weight: 700;
