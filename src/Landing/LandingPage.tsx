@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import backgroundImage from '@/assets/background.png';
 import bitcoinIllust from '@/assets/bitcoin.png';
 import limeIllust from '@/assets/lime.png';
+import bentoIllust from '@/assets/title-left-bento.png';
+import klaytnIllust from '@/assets/title-right-klaytn.png';
 import walletIllust from '@/assets/wallet.png';
 import { Colors } from '@/styles/colors';
 
@@ -101,6 +103,33 @@ const LandingPage = () => {
               <div className="bento-gradient"></div>
               <h2 className="title">벤토에서 가능해요.</h2>
             </div>
+
+            <Image
+              alt="Klaytn Logo"
+              src={klaytnIllust}
+              placeholder="blur"
+              width={200}
+              height={179.6}
+              style={{
+                position: 'absolute',
+                zIndex: 5,
+                top: -61,
+                right: -12,
+              }}
+            />
+            <Image
+              alt="Bento Zap"
+              src={bentoIllust}
+              placeholder="blur"
+              width={222}
+              height={222}
+              style={{
+                position: 'absolute',
+                zIndex: 5,
+                left: -26,
+                bottom: -124,
+              }}
+            />
           </div>
         </BannerForeground>
       </Banner>
@@ -216,8 +245,10 @@ const BannerForeground = styled.div`
   justify-content: center;
 
   .content {
+    position: relative;
     width: 695px;
     height: 217px;
+
     display: flex;
     flex-direction: column;
   }
