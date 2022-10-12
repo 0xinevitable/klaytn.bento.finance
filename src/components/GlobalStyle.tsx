@@ -31,6 +31,7 @@ export const GlobalStyle = createGlobalStyle`
 
   img {
     user-select: none;
+    -webkit-user-drag: none;
   }
 
   input, button {
