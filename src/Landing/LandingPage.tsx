@@ -27,6 +27,7 @@ const LandingPage = () => {
           <Image
             alt="Wallet"
             src={walletIllust}
+            placeholder="blur"
             width={314.54}
             height={287.74}
             style={{
@@ -50,6 +51,7 @@ const LandingPage = () => {
           <Image
             alt="Bitcoin"
             src={bitcoinIllust}
+            placeholder="blur"
             width={255}
             height={232}
             style={{
@@ -71,6 +73,7 @@ const LandingPage = () => {
           <Image
             alt="Lime"
             src={limeIllust}
+            placeholder="blur"
             width={341}
             height={289}
             style={{
