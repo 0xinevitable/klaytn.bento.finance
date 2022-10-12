@@ -41,4 +41,9 @@ export const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  ::selection {
+    color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(152, 24, 35, 0.65);
+  }
 `;
