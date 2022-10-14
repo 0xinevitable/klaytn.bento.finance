@@ -139,23 +139,6 @@ export const HeaderSection: React.FC = () => {
   );
 };
 
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1332px;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-`;
-
-const NavigationWrapper = styled.nav`
-  margin-top: 42px;
-  margin-bottom: 28px;
-  width: 100%;
-  height: 72px;
-`;
-
 const Header = styled.div`
   width: 100%;
   height: 370px;

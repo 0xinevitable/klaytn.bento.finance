@@ -2,14 +2,27 @@ import { NextPage } from 'next';
 import React from 'react';
 import styled from 'styled-components';
 
+import { MetaHead } from '@/components/MetaHead';
+import { Colors } from '@/styles/colors';
+
 import { HeaderSection } from './sections/HeaderSection';
 
 const LandingPage: NextPage = () => {
   return (
-    <Container>
-      <NavigationWrapper />
-      <HeaderSection />
-    </Container>
+    <>
+      <MetaHead />
+      <Container>
+        <NavigationWrapper />
+        <HeaderSection />
+
+        <FixedMessage href="https://bento.finance" target="_blank">
+          <div className="container">
+            <span className="title">Start with Bento</span>
+            <span className="url">bento.finance</span>
+          </div>
+        </FixedMessage>
+      </Container>
+    </>
   );
 };
 
@@ -19,6 +32,8 @@ const Container = styled.div`
   margin: 0 auto;
   max-width: 1332px;
   width: 100%;
+
+  padding-bottom: 140px;
 
   display: flex;
   flex-direction: column;
@@ -30,4 +45,43 @@ const NavigationWrapper = styled.nav`
   margin-bottom: 28px;
   width: 100%;
   height: 72px;
+`;
+
+const FixedMessage = styled.a`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: #d9f15c;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1332px;
+
+    & > .title {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: -0.03em;
+      color: ${Colors.gray900};
+    }
+
+    & > .url {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: -0.03em;
+      color: #829c1b;
+    }
+  }
 `;
