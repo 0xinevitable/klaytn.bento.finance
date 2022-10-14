@@ -1,12 +1,14 @@
 # klaytn.bento.finance
 
+![Cover](https://klaytn.bento.finance/assets/og-image.png)
+
 Frontend landing page for Bento's Klaytn Launch
 
 ## 🏛️ Licensing
 
 <img align="right" src="http://opensource.org/trademarks/opensource/OSI-Approved-License-100x137.png">
 
-- All our branding resources(such as trademarks, assets, and design) are copyright of Inevitable, all rights reserved. Other third-party Assets included in this repository are the copyright of their rightful owners.
+- All our branding resources(such as trademarks, assets, and design) are copyright of Inevitable, all rights reserved. Other third-party assets and brand logos included in this repository are the copyright of their rightful owners.
 
 - The project is licensed under the [Mozilla Public License Version 2.0](https://opensource.org/licenses/MPL-2.0). You must include this license and copyright notice if you use this work. This also means that you'll have to notify changes and open-source your work(the modified software) in the same license(or, in certain cases, one of the GNU licenses).
 
@@ -57,12 +59,24 @@ After receiving proof("signatures") that cryptographically proves the signer's o
 - This feature is exclusively made for this Hackathon. We collected the most commonly used and easily integrated DeFi protocols on Klaytn by TVL(Total Value Locked). KLAYswap, KokonutSwap, Swapscanner, and KLAYSTATION.
 - You can connect your Klaytn account, and Bento automatically fetches data from each staking pool and show the results, containing LP tokens unbonded, amount and valuation for each state(staking, unstaking, and rewarding)
 
+- For this, we built and open-sourced [`klaytn-multicall`(click for GitHub link)](https://github.com/junhoyeo/klaytn-multicall), which is an client SDK for the Multicall contract that supports `caver-js` right out of the box. This is used for reducing node queries and receiving data from the same block to provide clear criteria.
+
 - Currently, the data fetchers are written inside our serverless APIs in our monorepo(You can view them on GitHub), but we'll soon detach them into another repo called "adapters." Anyone can write an adapter, test it locally, and then make a PR to our repo to add support to Bento. DefiLlama used the same way to have 1.14k contributors to support 1955 DeFi protocols from over 145 other blockchains.
 
 ## Bento Badges
+
+"We’re making the home of soulbound tokens—not bound to your wallet, but to your true identity"
 
 # Future: as an identity chain
 
 So we now have an abstraction layer of user identity. We have plans to decentralize the entire protocol as an application-specific blockchain(m based on the Cosmos SDK and Tendermint consensus; User identifiers as Accounts, wallet validation requests as Messages, and validation logic as Modules. Users will group accounts and activities into a single Bento account.
 
 Third-party apps will be able to consume, relay, and commit data to the identity chain with all cross-chain identities and actions.
+
+# Community
+
+- **_🌎 [Telegram - Official Notice]: https://t.me/bentoinevitable_**
+- **_💬 [Telegram - Community]: https://t.me/bentocommunity_**
+- **_🌐 [Website]: https://bento.finance_**
+- **_🎮 [Discord]: https://discord.gg/zXmRRBxYqD_**
+- **_🛠 [GitHub]: https://github.com/inevitable-changes_**
