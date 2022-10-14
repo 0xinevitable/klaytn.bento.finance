@@ -15,7 +15,7 @@ const LandingPage: NextPage = () => {
         <NavigationWrapper />
         <HeaderSection />
 
-        <FixedMessage href="https://bento.finance" target="_blank">
+        <FixedMessage href="https://bento.finance/en" target="_blank">
           <div className="container">
             <span className="title">Start with Bento</span>
             <span className="url">bento.finance</span>
@@ -58,6 +58,12 @@ const FixedMessage = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: #f7f783;
+  }
 
   & > .container {
     height: 100%;

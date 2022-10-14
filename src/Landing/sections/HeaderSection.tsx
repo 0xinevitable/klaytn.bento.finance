@@ -16,12 +16,16 @@ export const HeaderSection: React.FC = () => {
       <Header>
         <Card>
           <CardText>
-            지갑도 여러 개 쓰는데 <br />
-            뭐에 들었나 보려면, <br />
+            {/* 지갑도 여러 개 쓰는데 <br />
+            뭐에 들었나 보려면, <br /> */}
+            Now you <br />
+            Don’t have to <br />
           </CardText>
           <CardText className="red">
-            하나씩 계속 <br />
-            왔다갔다 해야 하고
+            {/* 하나씩 계속 <br />
+            왔다갔다 해야 하고 */}
+            Switch Wallets <br />
+            One by One
           </CardText>
           <Image
             alt="Wallet"
@@ -40,12 +44,16 @@ export const HeaderSection: React.FC = () => {
         </Card>
         <Card>
           <CardText className="red">
-            디파이도 <br />
-            여러 개 투자 중이니까, <br />
+            {/* 디파이도 <br />
+            여러 개 투자 중이니까, <br /> */}
+            Investing in <br />
+            Multiple DeFis? <br />
           </CardText>
           <CardText>
-            NFT 가격도 <br />
-            실시간으로 보고 싶고 <br />
+            {/* NFT 가격도 <br />
+            실시간으로 보고 싶고 <br /> */}
+            Need to track <br />
+            NFT Floors? <br />
           </CardText>
           <Image
             alt="Bitcoin"
@@ -63,10 +71,15 @@ export const HeaderSection: React.FC = () => {
           />
         </Card>
         <StatusQuoCard>
-          <span className="subtitle">클레이튼 위에 있는</span>
+          <span className="subtitle">
+            {/* 클레이튼 위에 있는 */}
+            Asset Management
+          </span>
           <span className="title">
-            내 자산, 매일매일 <br />
-            한꺼번에 살펴보고 싶은데.
+            {/* 내 자산, 매일매일 <br />
+            한꺼번에 살펴보고 싶은데. */}
+            Had Never Been <br />
+            This Easy in Klaytn
           </span>
 
           <Image
@@ -96,14 +109,20 @@ export const HeaderSection: React.FC = () => {
           <div className="content">
             <div className="klaytn">
               <h1 className="title">
-                클레이튼 최초 <br />
-                오픈소스 대시보드
+                {/* 클레이튼 최초 <br />
+                오픈소스 대시보드 */}
+                {`Klaytn’s first `}
+                <br />
+                OSS Dashboard
               </h1>
               <div className="klaytn-gradient"></div>
             </div>
             <div className="bento">
               <div className="bento-gradient"></div>
-              <h2 className="title">벤토에서 가능해요.</h2>
+              <h2 className="title">
+                {/* 벤토에서 가능해요. */}
+                Possible in Bento.
+              </h2>
             </div>
 
             <Image
