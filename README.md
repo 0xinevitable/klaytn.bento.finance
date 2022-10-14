@@ -1,6 +1,6 @@
 # Bento Dashboard for Klaytn Fi+
 
-![Cover](https://klaytn.bento.finance/assets/og-image.png)
+[![Cover](https://klaytn.bento.finance/assets/og-image.png)](https://dorahacks.io/buidl/3614)
 
 [Frontend landing page for Bento's Klaytn Launch in **Klaymakers 2022**](https://dorahacks.io/buidl/3614)
 
