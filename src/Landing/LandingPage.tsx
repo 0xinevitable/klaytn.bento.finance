@@ -6,6 +6,8 @@ import { MetaHead } from '@/components/MetaHead';
 import { Colors } from '@/styles/colors';
 
 import { HeaderSection } from './sections/HeaderSection';
+import {DeFiSection } from'./sections/DeFiSection'
+import { NFTsSection } from './sections/NFTsSection'
 
 const LandingPage: NextPage = () => {
   return (
@@ -14,6 +16,8 @@ const LandingPage: NextPage = () => {
       <Container>
         <NavigationWrapper />
         <HeaderSection />
+        <DeFiSection />
+        <NFTsSection />
 
         <FixedMessage href="https://bento.finance/en" target="_blank">
           <div className="container">
