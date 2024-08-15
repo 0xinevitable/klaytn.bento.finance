@@ -79,4 +79,4 @@ Third-party apps will be able to consume, relay, and commit data to the identity
 - **_💬 [Telegram - Community]: https://t.me/bentocommunity_**
 - **_🌐 [Website]: https://bento.finance_**
 - **_🎮 [Discord]: https://discord.gg/zXmRRBxYqD_**
-- **_🛠 [GitHub]: https://github.com/inevitable-changes_**
+- **_🛠 [GitHub]: https://github.com/0xinevitable_**
